@@ -46,6 +46,6 @@ app.get('/api/animals', (req, res) => {
     }
     res.json(results);
 });
-app.listen(80, () => {
+app.listen(443, () => {
     console.log(`API server now on port 80!`);
 });
