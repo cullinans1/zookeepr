@@ -38,7 +38,7 @@ function filterByQuery(query, animalsArray) {
     }
     // return the filtered results:
     return filteredResults;
-  }
+};
 app.get('/api/animals', (req, res) => {
     let results = animals;
     if (req.query) {
@@ -46,6 +46,6 @@ app.get('/api/animals', (req, res) => {
     }
     res.json(results);
 });
-app.listen(443, () => {
-    console.log(`API server now on port 80!`);
+app.listen(PORT, () => {
+    console.log(`API server now on port ${PORT}!`);
 });
